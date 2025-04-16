@@ -34,7 +34,7 @@ selected_kabupaten = st.selectbox("Pilih Kabupaten", filtered_data['Kabupaten'])
 selected_row = filtered_data[filtered_data['Kabupaten'] == selected_kabupaten].iloc[0]
 st.write("**Data yang dipilih:**")
 st.write(f"Tahun: {selected_year}")
-st.write(f"Pendarahan: {selected_row['Pendarahan']}, Hipertensi: {selected_row['Hipertensi']}, Infeksi: {selected_row['Infeksi']}")
+st.write(f"Perdarahan: {selected_row['Perdarahan']}, Hipertensi: {selected_row['Hipertensi']}, Infeksi: {selected_row['Infeksi']}")
 
 # Pilihan learning rate dan epoch
 st.subheader("3. Pilih Parameter Model")
